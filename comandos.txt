@@ -1,0 +1,163 @@
+Last login: Mon Sep 18 15:40:12 on ttys000
+-bash: ng: command not found
+G:~ guille$ cd Documents/web2.0
+G:web2.0 guille$ git clone https://github.com/Guilleggb/Practica-Git.git
+Cloning into 'Practica-Git'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+G:web2.0 guille$ cd Practica-Git
+G:Practica-Git guille$ git checkout -b tomas-broda
+Switched to a new branch 'tomas-broda'
+G:Practica-Git guille$ echo "Hola" > archivo1.txt
+G:Practica-Git guille$ echo "Hola" > archivo2.txt
+G:Practica-Git guille$ echo "Hola" > archivo3.txt
+G:Practica-Git guille$ echo "Hola" > archivo4.txt
+G:Practica-Git guille$ git add archivo1.txt archivo2.txt archivo3.txt archivo4.txt
+G:Practica-Git guille$ git commit -m "Agrega archivos con mensaje 'Hola'"
+On branch tomas-broda
+nothing to commit, working tree clean
+G:Practica-Git guille$ git push origin tomas-broda
+
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'tomas-broda' on GitHub by visiting:
+remote:      https://github.com/Guilleggb/Practica-Git/pull/new/tomas-broda
+remote: 
+To https://github.com/Guilleggb/Practica-Git.git
+ * [new branch]      tomas-broda -> tomas-broda
+G:Practica-Git guille$ 
+G:Practica-Git guille$ cd ..
+G:web2.0 guille$ cd ..
+G:Documents guille$ cd web3.0
+G:web3.0 guille$ git clone https://github.com/Guilleggb/Practica-Git.git
+Cloning into 'Practica-Git'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+G:web3.0 guille$ cd Practica-Git
+G:Practica-Git guille$ git checkout -b ignacio-rosales
+Switched to a new branch 'ignacio-rosales'
+G:Practica-Git guille$ echo "Hola" > archivo1.txt
+G:Practica-Git guille$ echo "Hola" > archivo2.txt
+G:Practica-Git guille$ echo "Hola" > archivo3.txt
+G:Practica-Git guille$ echo "Hola" > archivo4.txt
+G:Practica-Git guille$ git add archivo1.txt archivo2.txt archivo3.txt archivo4.txt
+G:Practica-Git guille$ git commit -m "Agrega archivos con mensaje 'Hola'"
+On branch ignacio-rosales
+nothing to commit, working tree clean
+G:Practica-Git guille$ git push origin ignacio-rosales
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'ignacio-rosales' on GitHub by visiting:
+remote:      https://github.com/Guilleggb/Practica-Git/pull/new/ignacio-rosales
+remote: 
+To https://github.com/Guilleggb/Practica-Git.git
+ * [new branch]      ignacio-rosales -> ignacio-rosales
+G:Practica-Git guille$ cd ..
+G:web3.0 guille$ cd ..
+G:Documents guille$ cd web4.0
+G:web4.0 guille$ git clone https://github.com/Guilleggb/Practica-Git.git
+Cloning into 'Practica-Git'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+G:web4.0 guille$ cd Practica-Git
+G:Practica-Git guille$ 
+G:Practica-Git guille$ git checkout -b tomas-peresin
+Switched to a new branch 'tomas-peresin'
+G:Practica-Git guille$ echo "Hola" > archivo1.txt
+G:Practica-Git guille$ echo "Hola" > archivo2.txt
+G:Practica-Git guille$ echo "Hola" > archivo3.txt
+G:Practica-Git guille$ echo "Hola" > archivo4.txt
+G:Practica-Git guille$ git add archivo1.txt archivo2.txt archivo3.txt archivo4.txt
+G:Practica-Git guille$ git commit -m "Agrega archivos con mensaje 'Hola'"
+On branch tomas-peresin
+nothing to commit, working tree clean
+G:Practica-Git guille$ git push origin tomas-peresin
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'tomas-peresin' on GitHub by visiting:
+remote:      https://github.com/Guilleggb/Practica-Git/pull/new/tomas-peresin
+remote: 
+To https://github.com/Guilleggb/Practica-Git.git
+ * [new branch]      tomas-peresin -> tomas-peresin
+G:Practica-Git guille$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+G:Practica-Git guille$ git branch main
+G:Practica-Git guille$ git checkout main
+Switched to branch 'main'
+G:Practica-Git guille$ git merge tomas-broda
+merge: tomas-broda - not something we can merge
+
+Did you mean this?
+	
+G:Practica-Git guille$ git status
+On branch main
+nothing to commit, working tree clean
+G:Practica-Git guille$ git checkout main
+Already on 'main'
+G:Practica-Git guille$ git merge tomas-broda
+merge: tomas-broda - not something we can merge
+
+Did you mean this?
+	
+G:Practica-Git guille$ git add . 
+G:Practica-Git guille$ git commit -m "commit"
+On branch main
+nothing to commit, working tree clean
+G:Practica-Git guille$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/Guilleggb/Practica-Git/pull/new/main
+remote: 
+To https://github.com/Guilleggb/Practica-Git.git
+ * [new branch]      main -> main
+G:Practica-Git guille$ git checkout main
+Already on 'main'
+G:Practica-Git guille$ git merge ignacio-rosales
+merge: ignacio-rosales - not something we can merge
+
+Did you mean this?
+	
+G:Practica-Git guille$ git status
+On branch main
+nothing to commit, working tree clean
+G:Practica-Git guille$ git checkout tomas-peresin
+Switched to branch 'tomas-peresin'
+G:Practica-Git guille$ echo hola >> archivo1.txt
+G:Practica-Git guille$ cat archivo1.txt
+Hola
+hola
+G:Practica-Git guille$ git add .
+G:Practica-Git guille$ git commit -m "commit"
+[tomas-peresin 25d66ed] commit
+ 1 file changed, 1 insertion(+)
+G:Practica-Git guille$ git checkout main
+Switched to branch 'main'
+G:Practica-Git guille$ git merge tomas-peresin
+Updating 9878a06..25d66ed
+Fast-forward
+ archivo1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+G:Practica-Git guille$ git add .
+G:Practica-Git guille$ git commit "x"
+error: pathspec 'x' did not match any file(s) known to git
+G:Practica-Git guille$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 261 bytes | 261.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Guilleggb/Practica-Git.git
+   9878a06..25d66ed  main -> main
+G:Practica-Git guille$ 
